@@ -1,0 +1,1125 @@
+{
+  "n_stocks": 85,
+  "n_samples": 41769,
+  "periods": {
+    "train": "2014-01..2015-03",
+    "val": "2015-04..2015-06",
+    "test": "2015-07..2015-12"
+  },
+  "n_test": 10665,
+  "n_test_days": 128,
+  "E1": {
+    "share_up_cc_train": 0.5162,
+    "share_up_cc_test": 0.5003,
+    "share_up_oc_test": 0.5041,
+    "share_up_gap_test": 0.5104,
+    "coverage_share_with_tweets": {
+      "prev_session": 0.289,
+      "overnight": 0.401,
+      "session": 0.29
+    },
+    "median_tweets_when_present": {
+      "prev_session": 1.0,
+      "overnight": 2.0,
+      "session": 1.0
+    },
+    "baselines_cc": {
+      "majority_from_train": {
+        "acc": 0.5003,
+        "mcc": 0.0,
+        "n": 10665,
+        "naive_95ci": [
+          0.4908,
+          0.5098
+        ],
+        "day_clustered_95ci": [
+          0.4457,
+          0.5517
+        ]
+      },
+      "momentum_prev_sign": {
+        "acc": 0.5093,
+        "mcc": 0.0187,
+        "n": 10665,
+        "naive_95ci": [
+          0.4998,
+          0.5188
+        ],
+        "day_clustered_95ci": [
+          0.4767,
+          0.5421
+        ]
+      },
+      "reversal_prev_sign": {
+        "acc": 0.4907,
+        "mcc": -0.0187,
+        "n": 10665,
+        "naive_95ci": [
+          0.4812,
+          0.5002
+        ],
+        "day_clustered_95ci": [
+          0.4588,
+          0.5242
+        ]
+      },
+      "price_only_logistic": {
+        "acc": 0.4891,
+        "mcc": -0.0252,
+        "n": 10665,
+        "naive_95ci": [
+          0.4796,
+          0.4986
+        ],
+        "day_clustered_95ci": [
+          0.4432,
+          0.5349
+        ]
+      }
+    }
+  },
+  "E2": {
+    "tfidf|prev_session|r_cc": {
+      "acc": 0.5042,
+      "mcc": 0.0142,
+      "n": 10665,
+      "naive_95ci": [
+        0.4947,
+        0.5137
+      ],
+      "day_clustered_95ci": [
+        0.4629,
+        0.5459
+      ],
+      "C": 0.1,
+      "test_share_up": 0.5003,
+      "subset_with_tweets": {
+        "acc": 0.5272,
+        "mcc": 0.0468,
+        "n": 3111,
+        "naive_95ci": [
+          0.5096,
+          0.5447
+        ],
+        "day_clustered_95ci": [
+          0.4975,
+          0.557
+        ]
+      },
+      "subset_big_moves_stocknet_rule": {
+        "acc": 0.4979,
+        "mcc": 0.0021,
+        "n": 7228,
+        "naive_95ci": [
+          0.4864,
+          0.5095
+        ],
+        "day_clustered_95ci": [
+          0.4399,
+          0.5565
+        ]
+      }
+    },
+    "tfidf|prev_session|r_oc": {
+      "acc": 0.497,
+      "mcc": -0.0154,
+      "n": 10665,
+      "naive_95ci": [
+        0.4875,
+        0.5064
+      ],
+      "day_clustered_95ci": [
+        0.4639,
+        0.5299
+      ],
+      "C": 0.3,
+      "test_share_up": 0.5041,
+      "subset_with_tweets": {
+        "acc": 0.4957,
+        "mcc": -0.0026,
+        "n": 3111,
+        "naive_95ci": [
+          0.4781,
+          0.5132
+        ],
+        "day_clustered_95ci": [
+          0.4746,
+          0.5173
+        ]
+      }
+    },
+    "tfidf|prev_session|r_gap": {
+      "acc": 0.5104,
+      "mcc": 0.0,
+      "n": 10665,
+      "naive_95ci": [
+        0.5009,
+        0.5198
+      ],
+      "day_clustered_95ci": [
+        0.4556,
+        0.5684
+      ],
+      "C": 0.01,
+      "test_share_up": 0.5104,
+      "subset_with_tweets": {
+        "acc": 0.5243,
+        "mcc": 0.0,
+        "n": 3111,
+        "naive_95ci": [
+          0.5067,
+          0.5418
+        ],
+        "day_clustered_95ci": [
+          0.4627,
+          0.5844
+        ]
+      }
+    },
+    "tfidf|overnight|r_cc": {
+      "acc": 0.4905,
+      "mcc": -0.0229,
+      "n": 10665,
+      "naive_95ci": [
+        0.481,
+        0.5
+      ],
+      "day_clustered_95ci": [
+        0.4589,
+        0.5218
+      ],
+      "C": 1.0,
+      "test_share_up": 0.5003,
+      "subset_with_tweets": {
+        "acc": 0.499,
+        "mcc": 0.0022,
+        "n": 4575,
+        "naive_95ci": [
+          0.4845,
+          0.5135
+        ],
+        "day_clustered_95ci": [
+          0.4818,
+          0.5168
+        ]
+      },
+      "subset_big_moves_stocknet_rule": {
+        "acc": 0.4838,
+        "mcc": -0.0343,
+        "n": 7228,
+        "naive_95ci": [
+          0.4723,
+          0.4953
+        ],
+        "day_clustered_95ci": [
+          0.4418,
+          0.525
+        ]
+      }
+    },
+    "tfidf|overnight|r_oc": {
+      "acc": 0.4877,
+      "mcc": -0.0325,
+      "n": 10665,
+      "naive_95ci": [
+        0.4782,
+        0.4972
+      ],
+      "day_clustered_95ci": [
+        0.4608,
+        0.5142
+      ],
+      "C": 3.0,
+      "test_share_up": 0.5041,
+      "subset_with_tweets": {
+        "acc": 0.4863,
+        "mcc": -0.0171,
+        "n": 4575,
+        "naive_95ci": [
+          0.4719,
+          0.5008
+        ],
+        "day_clustered_95ci": [
+          0.4672,
+          0.5061
+        ]
+      }
+    },
+    "tfidf|overnight|r_gap": {
+      "acc": 0.5103,
+      "mcc": -0.0026,
+      "n": 10665,
+      "naive_95ci": [
+        0.5008,
+        0.5198
+      ],
+      "day_clustered_95ci": [
+        0.4557,
+        0.5654
+      ],
+      "C": 0.03,
+      "test_share_up": 0.5104,
+      "subset_with_tweets": {
+        "acc": 0.5303,
+        "mcc": -0.0022,
+        "n": 4575,
+        "naive_95ci": [
+          0.5158,
+          0.5447
+        ],
+        "day_clustered_95ci": [
+          0.4701,
+          0.588
+        ]
+      }
+    },
+    "tfidf|session|r_cc": {
+      "acc": 0.5039,
+      "mcc": 0.0106,
+      "n": 10665,
+      "naive_95ci": [
+        0.4944,
+        0.5134
+      ],
+      "day_clustered_95ci": [
+        0.4674,
+        0.5389
+      ],
+      "C": 1.0,
+      "test_share_up": 0.5003,
+      "subset_with_tweets": {
+        "acc": 0.5313,
+        "mcc": 0.0599,
+        "n": 3147,
+        "naive_95ci": [
+          0.5139,
+          0.5487
+        ],
+        "day_clustered_95ci": [
+          0.5126,
+          0.5503
+        ]
+      },
+      "subset_big_moves_stocknet_rule": {
+        "acc": 0.4986,
+        "mcc": 0.0026,
+        "n": 7228,
+        "naive_95ci": [
+          0.4871,
+          0.5101
+        ],
+        "day_clustered_95ci": [
+          0.4455,
+          0.5504
+        ]
+      }
+    },
+    "tfidf|session|r_oc": {
+      "acc": 0.5059,
+      "mcc": 0.0084,
+      "n": 10665,
+      "naive_95ci": [
+        0.4964,
+        0.5153
+      ],
+      "day_clustered_95ci": [
+        0.4758,
+        0.538
+      ],
+      "C": 0.3,
+      "test_share_up": 0.5041,
+      "subset_with_tweets": {
+        "acc": 0.5294,
+        "mcc": 0.0621,
+        "n": 3147,
+        "naive_95ci": [
+          0.512,
+          0.5468
+        ],
+        "day_clustered_95ci": [
+          0.508,
+          0.5516
+        ]
+      }
+    },
+    "tfidf|session|r_gap": {
+      "acc": 0.5084,
+      "mcc": -0.0108,
+      "n": 10665,
+      "naive_95ci": [
+        0.4989,
+        0.5179
+      ],
+      "day_clustered_95ci": [
+        0.4516,
+        0.5609
+      ],
+      "C": 0.1,
+      "test_share_up": 0.5104,
+      "subset_with_tweets": {
+        "acc": 0.5288,
+        "mcc": -0.0067,
+        "n": 3147,
+        "naive_95ci": [
+          0.5113,
+          0.5462
+        ],
+        "day_clustered_95ci": [
+          0.4741,
+          0.5853
+        ]
+      }
+    },
+    "wvec|prev_session|r_cc": {
+      "acc": 0.5021,
+      "mcc": 0.0057,
+      "n": 10665,
+      "naive_95ci": [
+        0.4926,
+        0.5116
+      ],
+      "day_clustered_95ci": [
+        0.4605,
+        0.5411
+      ],
+      "C": 0.03,
+      "test_share_up": 0.5003,
+      "subset_with_tweets": {
+        "acc": 0.5201,
+        "mcc": 0.0359,
+        "n": 3111,
+        "naive_95ci": [
+          0.5025,
+          0.5376
+        ],
+        "day_clustered_95ci": [
+          0.4951,
+          0.5442
+        ]
+      },
+      "subset_big_moves_stocknet_rule": {
+        "acc": 0.4936,
+        "mcc": -0.0121,
+        "n": 7228,
+        "naive_95ci": [
+          0.4821,
+          0.5052
+        ],
+        "day_clustered_95ci": [
+          0.4421,
+          0.5491
+        ]
+      }
+    },
+    "wvec|prev_session|r_oc": {
+      "acc": 0.5004,
+      "mcc": -0.007,
+      "n": 10665,
+      "naive_95ci": [
+        0.4909,
+        0.5099
+      ],
+      "day_clustered_95ci": [
+        0.4652,
+        0.5336
+      ],
+      "C": 0.1,
+      "test_share_up": 0.5041,
+      "subset_with_tweets": {
+        "acc": 0.5076,
+        "mcc": 0.0153,
+        "n": 3111,
+        "naive_95ci": [
+          0.49,
+          0.5251
+        ],
+        "day_clustered_95ci": [
+          0.4876,
+          0.5272
+        ]
+      }
+    },
+    "wvec|prev_session|r_gap": {
+      "acc": 0.5049,
+      "mcc": -0.0128,
+      "n": 10665,
+      "naive_95ci": [
+        0.4954,
+        0.5144
+      ],
+      "day_clustered_95ci": [
+        0.4565,
+        0.5501
+      ],
+      "C": 0.3,
+      "test_share_up": 0.5104,
+      "subset_with_tweets": {
+        "acc": 0.5056,
+        "mcc": -0.0088,
+        "n": 3111,
+        "naive_95ci": [
+          0.4881,
+          0.5232
+        ],
+        "day_clustered_95ci": [
+          0.4749,
+          0.5356
+        ]
+      }
+    },
+    "wvec|overnight|r_cc": {
+      "acc": 0.4941,
+      "mcc": -0.0154,
+      "n": 10665,
+      "naive_95ci": [
+        0.4847,
+        0.5036
+      ],
+      "day_clustered_95ci": [
+        0.4609,
+        0.5294
+      ],
+      "C": 0.01,
+      "test_share_up": 0.5003,
+      "subset_with_tweets": {
+        "acc": 0.5075,
+        "mcc": 0.0104,
+        "n": 4575,
+        "naive_95ci": [
+          0.4931,
+          0.522
+        ],
+        "day_clustered_95ci": [
+          0.4919,
+          0.5238
+        ]
+      },
+      "subset_big_moves_stocknet_rule": {
+        "acc": 0.4869,
+        "mcc": -0.0286,
+        "n": 7228,
+        "naive_95ci": [
+          0.4753,
+          0.4984
+        ],
+        "day_clustered_95ci": [
+          0.44,
+          0.5349
+        ]
+      }
+    },
+    "wvec|overnight|r_oc": {
+      "acc": 0.494,
+      "mcc": -0.0177,
+      "n": 10665,
+      "naive_95ci": [
+        0.4846,
+        0.5035
+      ],
+      "day_clustered_95ci": [
+        0.468,
+        0.5208
+      ],
+      "C": 0.03,
+      "test_share_up": 0.5041,
+      "subset_with_tweets": {
+        "acc": 0.5012,
+        "mcc": 0.0151,
+        "n": 4575,
+        "naive_95ci": [
+          0.4867,
+          0.5157
+        ],
+        "day_clustered_95ci": [
+          0.4789,
+          0.522
+        ]
+      }
+    },
+    "wvec|overnight|r_gap": {
+      "acc": 0.5045,
+      "mcc": -0.0102,
+      "n": 10665,
+      "naive_95ci": [
+        0.495,
+        0.5139
+      ],
+      "day_clustered_95ci": [
+        0.4575,
+        0.5506
+      ],
+      "C": 0.01,
+      "test_share_up": 0.5104,
+      "subset_with_tweets": {
+        "acc": 0.5167,
+        "mcc": 0.0083,
+        "n": 4575,
+        "naive_95ci": [
+          0.5022,
+          0.5312
+        ],
+        "day_clustered_95ci": [
+          0.4858,
+          0.5474
+        ]
+      }
+    },
+    "wvec|session|r_cc": {
+      "acc": 0.4907,
+      "mcc": -0.0289,
+      "n": 10665,
+      "naive_95ci": [
+        0.4812,
+        0.5002
+      ],
+      "day_clustered_95ci": [
+        0.4506,
+        0.5302
+      ],
+      "C": 1.0,
+      "test_share_up": 0.5003,
+      "subset_with_tweets": {
+        "acc": 0.4865,
+        "mcc": -0.0331,
+        "n": 3147,
+        "naive_95ci": [
+          0.469,
+          0.504
+        ],
+        "day_clustered_95ci": [
+          0.4656,
+          0.5081
+        ]
+      },
+      "subset_big_moves_stocknet_rule": {
+        "acc": 0.482,
+        "mcc": -0.0469,
+        "n": 7228,
+        "naive_95ci": [
+          0.4705,
+          0.4935
+        ],
+        "day_clustered_95ci": [
+          0.4336,
+          0.5357
+        ]
+      }
+    },
+    "wvec|session|r_oc": {
+      "acc": 0.4948,
+      "mcc": -0.0216,
+      "n": 10665,
+      "naive_95ci": [
+        0.4853,
+        0.5043
+      ],
+      "day_clustered_95ci": [
+        0.4635,
+        0.5276
+      ],
+      "C": 0.1,
+      "test_share_up": 0.5041,
+      "subset_with_tweets": {
+        "acc": 0.4919,
+        "mcc": -0.0117,
+        "n": 3147,
+        "naive_95ci": [
+          0.4744,
+          0.5094
+        ],
+        "day_clustered_95ci": [
+          0.4698,
+          0.514
+        ]
+      }
+    },
+    "wvec|session|r_gap": {
+      "acc": 0.5028,
+      "mcc": -0.0239,
+      "n": 10665,
+      "naive_95ci": [
+        0.4933,
+        0.5123
+      ],
+      "day_clustered_95ci": [
+        0.4547,
+        0.5507
+      ],
+      "C": 0.1,
+      "test_share_up": 0.5104,
+      "subset_with_tweets": {
+        "acc": 0.5097,
+        "mcc": -0.0204,
+        "n": 3147,
+        "naive_95ci": [
+          0.4922,
+          0.5272
+        ],
+        "day_clustered_95ci": [
+          0.4732,
+          0.546
+        ]
+      }
+    }
+  },
+  "E5": {
+    "prev_session|r_cc": {
+      "n": 2875,
+      "spearman": 0.0019,
+      "hit_rate": 0.5016,
+      "day_clustered_95ci": [
+        0.4813,
+        0.5217
+      ]
+    },
+    "prev_session|r_oc": {
+      "n": 2875,
+      "spearman": 0.0074,
+      "hit_rate": 0.5005,
+      "day_clustered_95ci": [
+        0.4791,
+        0.5212
+      ]
+    },
+    "prev_session|r_gap": {
+      "n": 2875,
+      "spearman": -0.0078,
+      "hit_rate": 0.5197,
+      "day_clustered_95ci": [
+        0.4991,
+        0.5411
+      ]
+    },
+    "overnight|r_cc": {
+      "n": 4627,
+      "spearman": 0.0082,
+      "hit_rate": 0.504,
+      "day_clustered_95ci": [
+        0.4881,
+        0.5219
+      ]
+    },
+    "overnight|r_oc": {
+      "n": 4627,
+      "spearman": -0.0053,
+      "hit_rate": 0.4995,
+      "day_clustered_95ci": [
+        0.4817,
+        0.5161
+      ]
+    },
+    "overnight|r_gap": {
+      "n": 4627,
+      "spearman": 0.026,
+      "hit_rate": 0.5278,
+      "day_clustered_95ci": [
+        0.508,
+        0.5478
+      ]
+    },
+    "session|r_cc": {
+      "n": 2887,
+      "spearman": 0.1412,
+      "hit_rate": 0.5691,
+      "day_clustered_95ci": [
+        0.5475,
+        0.5904
+      ]
+    },
+    "session|r_oc": {
+      "n": 2887,
+      "spearman": 0.0939,
+      "hit_rate": 0.5355,
+      "day_clustered_95ci": [
+        0.5153,
+        0.5567
+      ]
+    },
+    "session|r_gap": {
+      "n": 2887,
+      "spearman": 0.0829,
+      "hit_rate": 0.5587,
+      "day_clustered_95ci": [
+        0.539,
+        0.5794
+      ]
+    },
+    "prev_session|lag1 (yesterday's own return)": {
+      "n": 2875,
+      "spearman": 0.1414,
+      "hit_rate": 0.5683
+    }
+  },
+  "E3": {
+    "tfidf|overnight|r_cc|random_split": {
+      "acc": 0.5265,
+      "mcc": 0.0433,
+      "n": 8354,
+      "naive_95ci": [
+        0.5157,
+        0.5372
+      ],
+      "day_clustered_95ci": [
+        0.5095,
+        0.5449
+      ]
+    },
+    "tfidf|overnight|r_cc|time_split": {
+      "acc": 0.4905,
+      "mcc": -0.0229,
+      "n": 10665,
+      "naive_95ci": [
+        0.481,
+        0.5
+      ],
+      "day_clustered_95ci": [
+        0.4589,
+        0.5218
+      ],
+      "C": 1.0,
+      "test_share_up": 0.5003,
+      "subset_with_tweets": {
+        "acc": 0.499,
+        "mcc": 0.0022,
+        "n": 4575,
+        "naive_95ci": [
+          0.4845,
+          0.5135
+        ],
+        "day_clustered_95ci": [
+          0.4818,
+          0.5168
+        ]
+      },
+      "subset_big_moves_stocknet_rule": {
+        "acc": 0.4838,
+        "mcc": -0.0343,
+        "n": 7228,
+        "naive_95ci": [
+          0.4723,
+          0.4953
+        ],
+        "day_clustered_95ci": [
+          0.4418,
+          0.525
+        ]
+      }
+    },
+    "tfidf|prev_session|r_cc|random_split": {
+      "acc": 0.5194,
+      "mcc": 0.024,
+      "n": 8354,
+      "naive_95ci": [
+        0.5087,
+        0.5301
+      ],
+      "day_clustered_95ci": [
+        0.4995,
+        0.5387
+      ]
+    },
+    "tfidf|prev_session|r_cc|time_split": {
+      "acc": 0.5042,
+      "mcc": 0.0142,
+      "n": 10665,
+      "naive_95ci": [
+        0.4947,
+        0.5137
+      ],
+      "day_clustered_95ci": [
+        0.4629,
+        0.5459
+      ],
+      "C": 0.1,
+      "test_share_up": 0.5003,
+      "subset_with_tweets": {
+        "acc": 0.5272,
+        "mcc": 0.0468,
+        "n": 3111,
+        "naive_95ci": [
+          0.5096,
+          0.5447
+        ],
+        "day_clustered_95ci": [
+          0.4975,
+          0.557
+        ]
+      },
+      "subset_big_moves_stocknet_rule": {
+        "acc": 0.4979,
+        "mcc": 0.0021,
+        "n": 7228,
+        "naive_95ci": [
+          0.4864,
+          0.5095
+        ],
+        "day_clustered_95ci": [
+          0.4399,
+          0.5565
+        ]
+      }
+    },
+    "tfidf|session|r_cc|random_split": {
+      "acc": 0.531,
+      "mcc": 0.0592,
+      "n": 8354,
+      "naive_95ci": [
+        0.5203,
+        0.5417
+      ],
+      "day_clustered_95ci": [
+        0.5115,
+        0.5504
+      ]
+    },
+    "tfidf|session|r_cc|time_split": {
+      "acc": 0.5039,
+      "mcc": 0.0106,
+      "n": 10665,
+      "naive_95ci": [
+        0.4944,
+        0.5134
+      ],
+      "day_clustered_95ci": [
+        0.4674,
+        0.5389
+      ],
+      "C": 1.0,
+      "test_share_up": 0.5003,
+      "subset_with_tweets": {
+        "acc": 0.5313,
+        "mcc": 0.0599,
+        "n": 3147,
+        "naive_95ci": [
+          0.5139,
+          0.5487
+        ],
+        "day_clustered_95ci": [
+          0.5126,
+          0.5503
+        ]
+      },
+      "subset_big_moves_stocknet_rule": {
+        "acc": 0.4986,
+        "mcc": 0.0026,
+        "n": 7228,
+        "naive_95ci": [
+          0.4871,
+          0.5101
+        ],
+        "day_clustered_95ci": [
+          0.4455,
+          0.5504
+        ]
+      }
+    },
+    "wvec|overnight|r_cc|random_split": {
+      "acc": 0.5162,
+      "mcc": 0.0152,
+      "n": 8354,
+      "naive_95ci": [
+        0.5054,
+        0.5269
+      ],
+      "day_clustered_95ci": [
+        0.4979,
+        0.535
+      ]
+    },
+    "wvec|overnight|r_cc|time_split": {
+      "acc": 0.4941,
+      "mcc": -0.0154,
+      "n": 10665,
+      "naive_95ci": [
+        0.4847,
+        0.5036
+      ],
+      "day_clustered_95ci": [
+        0.4609,
+        0.5294
+      ],
+      "C": 0.01,
+      "test_share_up": 0.5003,
+      "subset_with_tweets": {
+        "acc": 0.5075,
+        "mcc": 0.0104,
+        "n": 4575,
+        "naive_95ci": [
+          0.4931,
+          0.522
+        ],
+        "day_clustered_95ci": [
+          0.4919,
+          0.5238
+        ]
+      },
+      "subset_big_moves_stocknet_rule": {
+        "acc": 0.4869,
+        "mcc": -0.0286,
+        "n": 7228,
+        "naive_95ci": [
+          0.4753,
+          0.4984
+        ],
+        "day_clustered_95ci": [
+          0.44,
+          0.5349
+        ]
+      }
+    },
+    "wvec|prev_session|r_cc|random_split": {
+      "acc": 0.514,
+      "mcc": 0.0076,
+      "n": 8354,
+      "naive_95ci": [
+        0.5033,
+        0.5247
+      ],
+      "day_clustered_95ci": [
+        0.4939,
+        0.535
+      ]
+    },
+    "wvec|prev_session|r_cc|time_split": {
+      "acc": 0.5021,
+      "mcc": 0.0057,
+      "n": 10665,
+      "naive_95ci": [
+        0.4926,
+        0.5116
+      ],
+      "day_clustered_95ci": [
+        0.4605,
+        0.5411
+      ],
+      "C": 0.03,
+      "test_share_up": 0.5003,
+      "subset_with_tweets": {
+        "acc": 0.5201,
+        "mcc": 0.0359,
+        "n": 3111,
+        "naive_95ci": [
+          0.5025,
+          0.5376
+        ],
+        "day_clustered_95ci": [
+          0.4951,
+          0.5442
+        ]
+      },
+      "subset_big_moves_stocknet_rule": {
+        "acc": 0.4936,
+        "mcc": -0.0121,
+        "n": 7228,
+        "naive_95ci": [
+          0.4821,
+          0.5052
+        ],
+        "day_clustered_95ci": [
+          0.4421,
+          0.5491
+        ]
+      }
+    },
+    "wvec|session|r_cc|random_split": {
+      "acc": 0.5107,
+      "mcc": -0.0043,
+      "n": 8354,
+      "naive_95ci": [
+        0.4999,
+        0.5214
+      ],
+      "day_clustered_95ci": [
+        0.4909,
+        0.5296
+      ]
+    },
+    "wvec|session|r_cc|time_split": {
+      "acc": 0.4907,
+      "mcc": -0.0289,
+      "n": 10665,
+      "naive_95ci": [
+        0.4812,
+        0.5002
+      ],
+      "day_clustered_95ci": [
+        0.4506,
+        0.5302
+      ],
+      "C": 1.0,
+      "test_share_up": 0.5003,
+      "subset_with_tweets": {
+        "acc": 0.4865,
+        "mcc": -0.0331,
+        "n": 3147,
+        "naive_95ci": [
+          0.469,
+          0.504
+        ],
+        "day_clustered_95ci": [
+          0.4656,
+          0.5081
+        ]
+      },
+      "subset_big_moves_stocknet_rule": {
+        "acc": 0.482,
+        "mcc": -0.0469,
+        "n": 7228,
+        "naive_95ci": [
+          0.4705,
+          0.4935
+        ],
+        "day_clustered_95ci": [
+          0.4336,
+          0.5357
+        ]
+      }
+    }
+  },
+  "E3b": {
+    "tfidf|overnight|r_cc|random_days_split": {
+      "acc": 0.5089,
+      "mcc": -0.0072,
+      "n": 8382,
+      "naive_95ci": [
+        0.4982,
+        0.5197
+      ],
+      "day_clustered_95ci": [
+        0.4577,
+        0.562
+      ]
+    },
+    "tfidf|prev_session|r_cc|random_days_split": {
+      "acc": 0.5093,
+      "mcc": 0.0111,
+      "n": 8382,
+      "naive_95ci": [
+        0.4986,
+        0.52
+      ],
+      "day_clustered_95ci": [
+        0.4577,
+        0.5599
+      ]
+    },
+    "tfidf|session|r_cc|random_days_split": {
+      "acc": 0.5086,
+      "mcc": -0.0066,
+      "n": 8382,
+      "naive_95ci": [
+        0.4979,
+        0.5193
+      ],
+      "day_clustered_95ci": [
+        0.4589,
+        0.5594
+      ]
+    }
+  },
+  "E4": {
+    "mean_pairwise_corr_returns": 0.37,
+    "mean_pairwise_corr_up_indicator": 0.263,
+    "stocks_used": 84
+  }
+}

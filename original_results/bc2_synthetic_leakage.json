@@ -1,0 +1,45 @@
+{
+  "part1_timing": {
+    "naive_calendar_day__cc": {
+      "test_accuracy": 0.7353,
+      "day_clustered_se": 0.0053,
+      "test_days": 600,
+      "test_predictions": 18000
+    },
+    "known_before_open__cc": {
+      "test_accuracy": 0.6016,
+      "day_clustered_se": 0.0107,
+      "test_days": 600,
+      "test_predictions": 18000
+    },
+    "known_before_open__oc": {
+      "test_accuracy": 0.5101,
+      "day_clustered_se": 0.0084,
+      "test_days": 600,
+      "test_predictions": 18000
+    },
+    "known_at_prev_close__cc": {
+      "test_accuracy": 0.5038,
+      "day_clustered_se": 0.0118,
+      "test_days": 600,
+      "test_predictions": 18000
+    }
+  },
+  "part2_splitting": {
+    "n_samples": 31536,
+    "share_up": 0.4964,
+    "logistic": {
+      "random_5fold": 0.5121,
+      "blocked_5fold_no_embargo": 0.5069,
+      "blocked_5fold_embargo20": 0.5074,
+      "walk_forward": 0.5099
+    },
+    "knn15": {
+      "random_5fold": 0.554,
+      "blocked_5fold_no_embargo": 0.5002,
+      "blocked_5fold_embargo20": 0.4993,
+      "walk_forward": 0.5014
+    },
+    "oracle_sentiment_only_accuracy": 0.5122
+  }
+}

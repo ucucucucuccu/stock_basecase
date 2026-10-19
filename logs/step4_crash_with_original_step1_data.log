@@ -1,0 +1,74 @@
+﻿python.exe : D:\stock\.venv\Lib\site-packages\numpy\_core\_methods.py:188: RuntimeWarning: invalid value encountered in
+ subtract
+At line:1 char:338
++ ... production; & D:\stock\.venv\Scripts\python.exe -X utf8 code\starter\ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (D:\stock\.venv\...red in subtract:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  x = um.subtract(arr, arrmean, out=...)
+D:\stock\reproduction\code\starter\step4_baseline_models.py:239: RuntimeWarning: invalid value encountered in subtract
+  parts = [(X - mu) / sd, dummies]
+Traceback (most recent call last):
+  File "D:\stock\reproduction\code\starter\step4_baseline_models.py", line 311, in <module>
+    main()
+    ~~~~^^
+  File "D:\stock\reproduction\code\starter\step4_baseline_models.py", line 272, in main
+    P = {n: fit_predict(design(c + extra), y) for n, c in specs.items()}
+            ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\stock\reproduction\code\starter\step4_baseline_models.py", line 245, in fit_predict
+    best = min([0.1, 1, 10, 100, 1000, 10000],
+               key=lambda al: np.mean((Ridge(alpha=al).fit(X[tr], y[tr]).predict(X[va]) - y[va]) ** 2))
+  File "D:\stock\reproduction\code\starter\step4_baseline_models.py", line 246, in <lambda>
+    key=lambda al: np.mean((Ridge(alpha=al).fit(X[tr], y[tr]).predict(X[va]) - y[va]) ** 2))
+                            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "D:\stock\.venv\Lib\site-packages\sklearn\base.py", line 1403, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File "D:\stock\.venv\Lib\site-packages\sklearn\linear_model\_ridge.py", line 1253, in fit
+    X, y = validate_data(
+           ~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<6 lines>...
+        y_numeric=True,
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\stock\.venv\Lib\site-packages\sklearn\utils\validation.py", line 3058, in validate_data
+    X, y = check_X_y(X, y, **check_params)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\stock\.venv\Lib\site-packages\sklearn\utils\validation.py", line 1330, in check_X_y
+    X = check_array(
+        X,
+    ...<12 lines>...
+        input_name="X",
+    )
+  File "D:\stock\.venv\Lib\site-packages\sklearn\utils\validation.py", line 1090, in check_array
+    _assert_all_finite(
+    ~~~~~~~~~~~~~~~~~~^
+        array,
+        ^^^^^^
+    ...<2 lines>...
+        allow_nan=ensure_all_finite == "allow-nan",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\stock\.venv\Lib\site-packages\sklearn\utils\validation.py", line 137, in _assert_all_finite
+    _assert_all_finite_element_wise(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        X,
+        ^^
+    ...<4 lines>...
+        input_name=input_name,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\stock\.venv\Lib\site-packages\sklearn\utils\validation.py", line 186, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input X contains NaN.
+Ridge does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklea
+rn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternat
+ively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop sample
+s with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators th
+at handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-
+nan-values

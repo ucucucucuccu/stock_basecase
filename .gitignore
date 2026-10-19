@@ -1,0 +1,6 @@
+data/
+*.jsonl
+*.npz
+.venv/
+__pycache__/
+_downloads/

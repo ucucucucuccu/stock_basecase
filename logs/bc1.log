@@ -1,0 +1,92 @@
+{
+  "alpha": 0.05,
+  "power": 0.8,
+  "partA": [
+    {
+      "accuracy": 0.51,
+      "n_independent": 15455,
+      "exact_power_at_n": 0.797,
+      "half_width_95ci_at_n": 0.0079
+    },
+    {
+      "accuracy": 0.52,
+      "n_independent": 3863,
+      "exact_power_at_n": 0.792,
+      "half_width_95ci_at_n": 0.0158
+    },
+    {
+      "accuracy": 0.53,
+      "n_independent": 1716,
+      "exact_power_at_n": 0.794,
+      "half_width_95ci_at_n": 0.0237
+    },
+    {
+      "accuracy": 0.55,
+      "n_independent": 617,
+      "exact_power_at_n": 0.787,
+      "half_width_95ci_at_n": 0.0395
+    },
+    {
+      "accuracy": 0.6,
+      "n_independent": 153,
+      "exact_power_at_n": 0.762,
+      "half_width_95ci_at_n": 0.0792
+    }
+  ],
+  "partB": {
+    "0.52": {
+      "index_or_one_stock_years": 15.8,
+      "m30_rho0.0_days": 129,
+      "m30_rho0.0_years": 0.53,
+      "m30_rho0.1_days": 503,
+      "m30_rho0.1_years": 2.05,
+      "m30_rho0.25_days": 1063,
+      "m30_rho0.25_years": 4.34,
+      "m30_rho0.4_days": 1623,
+      "m30_rho0.4_years": 6.62
+    },
+    "0.55": {
+      "index_or_one_stock_years": 2.5,
+      "m30_rho0.0_days": 21,
+      "m30_rho0.0_years": 0.08,
+      "m30_rho0.1_days": 81,
+      "m30_rho0.1_years": 0.33,
+      "m30_rho0.25_days": 170,
+      "m30_rho0.25_years": 0.69,
+      "m30_rho0.4_days": 260,
+      "m30_rho0.4_years": 1.06
+    }
+  },
+  "partC": [
+    {
+      "m": 30,
+      "days": 500,
+      "market_var_share": 0.2,
+      "q_market": 0.5,
+      "mean_acc": 0.5004,
+      "false_positive_rate_naive": 0.252,
+      "false_positive_rate_day_clustered": 0.065,
+      "mean_icc": 0.128
+    },
+    {
+      "m": 30,
+      "days": 500,
+      "market_var_share": 0.4,
+      "q_market": 0.5,
+      "mean_acc": 0.4996,
+      "false_positive_rate_naive": 0.31,
+      "false_positive_rate_day_clustered": 0.048,
+      "mean_icc": 0.261
+    },
+    {
+      "m": 30,
+      "days": 500,
+      "market_var_share": 0.6,
+      "q_market": 0.5,
+      "mean_acc": 0.5015,
+      "false_positive_rate_naive": 0.38,
+      "false_positive_rate_day_clustered": 0.05,
+      "mean_icc": 0.41
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+OK  Thu 10/8 07:30                 -> 2026-10-08 overnight
+OK  Thu 10/8 08:50                 -> 2026-10-08 late
+OK  Thu 10/8 10:00                 -> 2026-10-08 session
+OK  Thu 10/8 13:30 (the close)     -> 2026-10-12 overnight
+OK  Thu 10/8 20:00                 -> 2026-10-12 overnight
+OK  Fri 10/9 holiday 12:00         -> 2026-10-12 overnight
+OK  Sat 10/10 National Day         -> 2026-10-12 overnight
+OK  Mon 10/12 07:00                -> 2026-10-12 overnight
+OK  FinMind UTC conversion       -> 2026-10-15 16:24 Taipei
+trading_day       bucket stock  newsId  publishAt  n_tags  reaction_title
+ 2026-10-08      session  2330       1 1791424800       1            True
+ 2026-10-12 prev_session  2330       1 1791424800       1            True
+selftest passed

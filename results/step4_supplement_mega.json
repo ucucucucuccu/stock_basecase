@@ -1,0 +1,139 @@
+{
+  "universe": "mega",
+  "n_rows": 9325,
+  "walkforward_alpha10": {
+    "earnings_or_revenue_news": {
+      "n": 399,
+      "M1_r2_within": 0.1384,
+      "M1e_r2_within": 0.1576,
+      "delta_M1e_minus_M1": {
+        "value": 0.0192,
+        "ci95": [
+          -0.0158,
+          0.0537
+        ]
+      }
+    },
+    "other_news": {
+      "n": 1549,
+      "M1_r2_within": 0.3511,
+      "M1e_r2_within": 0.3454,
+      "delta_M1e_minus_M1": {
+        "value": -0.0057,
+        "ci95": [
+          -0.0094,
+          -0.0021
+        ]
+      }
+    },
+    "no_news": {
+      "n": 2745,
+      "M1_r2_within": 0.3032,
+      "M1e_r2_within": 0.3018,
+      "delta_M1e_minus_M1": {
+        "value": -0.0014,
+        "ci95": [
+          -0.0029,
+          0.0001
+        ]
+      }
+    },
+    "all": {
+      "n": 4693,
+      "M1_r2_within": 0.3062,
+      "M1e_r2_within": 0.305,
+      "delta_M1e_minus_M1": {
+        "value": -0.0011,
+        "ci95": [
+          -0.0045,
+          0.0021
+        ]
+      }
+    },
+    "leak_session_news_delta_LEAK_minus_M2": {
+      "value": 0.0122,
+      "ci95": [
+        0.0065,
+        0.018
+      ]
+    }
+  },
+  "fixed_split_leak_same_alpha": {
+    "alpha_M2_and_LEAK": 10,
+    "delta_LEAK_minus_M2": 0.0052,
+    "ci95": [
+      0.0012,
+      0.0092
+    ]
+  },
+  "cross_market": {
+    "taiex_finmind": {
+      "gap": {
+        "r2": 0.2378,
+        "dirAcc": 0.8091,
+        "n": 241,
+        "coef": [
+          0.0008,
+          0.1206,
+          0.0878,
+          0.1201
+        ]
+      },
+      "oc": {
+        "r2": 0.0301,
+        "dirAcc": 0.5311,
+        "n": 241,
+        "coef": [
+          -0.0009,
+          0.371,
+          -0.0986,
+          0.0017
+        ]
+      }
+    },
+    "taiex_yahoo": {
+      "gap": {
+        "r2": 0.2378,
+        "dirAcc": 0.8091,
+        "n": 241,
+        "coef": [
+          0.0008,
+          0.1206,
+          0.0878,
+          0.1201
+        ]
+      },
+      "oc": {
+        "r2": 0.0301,
+        "dirAcc": 0.5311,
+        "n": 241,
+        "coef": [
+          -0.0009,
+          0.371,
+          -0.0986,
+          0.0017
+        ]
+      }
+    },
+    "adr_TSM_to_2330": {
+      "gap": {
+        "r2": 0.4884,
+        "dirAcc": 0.694,
+        "n": 232,
+        "coef": [
+          0.0014,
+          0.5134
+        ]
+      },
+      "oc": {
+        "r2": 0.0065,
+        "dirAcc": 0.4828,
+        "n": 232,
+        "coef": [
+          -0.0009,
+          -0.0817
+        ]
+      }
+    }
+  }
+}

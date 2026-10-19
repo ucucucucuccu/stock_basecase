@@ -1,0 +1,102 @@
+n                                  rows (fixed split)                           mega (權值股)         9294     9325  
+n                                  test rows                                    mega (權值股)         4672     4693  
+n                                  test days                                    mega (權值股)          235      236  
+A walk-forward R2                  M0                                           mega (權值股)       0.2739   0.2774  CI BC6 [0.227, 0.318] / repro [0.230, 0.320]
+A walk-forward R2                  M1                                           mega (權值股)          0.3   0.3062  CI BC6 [0.248, 0.348] / repro [0.256, 0.353]
+A walk-forward R2                  M2                                           mega (權值股)          0.3   0.3056  CI BC6 [0.248, 0.349] / repro [0.255, 0.356]
+A walk-forward R2                  M3                                           mega (權值股)       0.2972   0.3029  CI BC6 [0.245, 0.345] / repro [0.255, 0.353]
+A walk-forward dR2                 M1-M0                                        mega (權值股)       0.0261   0.0288  CI BC6 [0.001, 0.051] / repro [0.003, 0.052]
+A walk-forward dR2                 M2-M1                                        mega (權值股)       0.0001  -0.0006  CI BC6 [-0.004, 0.004] / repro [-0.004, 0.003]
+A walk-forward dR2                 M3-M2                                        mega (權值股)      -0.0028  -0.0027  CI BC6 [-0.005, -0.000] / repro [-0.005, -0.000]
+A walk-forward dR2                 M3-M1                                        mega (權值股)      -0.0028  -0.0033  CI BC6 [-0.008, 0.002] / repro: point only
+B event subsets                    earnings_or_revenue_news: n                  mega (權值股)          397      399  
+B event subsets                    earnings_or_revenue_news: M1 under-predictio mega (權值股)          6.5      5.7  
+B event subsets                    earnings_or_revenue_news: M1 R2              mega (權值股)       0.1497   0.1384  
+B event subsets                    earnings_or_revenue_news: M1e under-predicti mega (權值股)          0.3     -0.8  
+B event subsets                    earnings_or_revenue_news: M1e R2             mega (權值股)       0.1729   0.1576  
+B event subsets                    earnings_or_revenue_news: dR2 M1e-M1         mega (權值股)       0.0232   0.0192  CI BC6 [-0.007, 0.055] / repro [-0.016, 0.054] (supplement)
+B event subsets                    other_news: n                                mega (權值股)         1547     1549  
+B event subsets                    other_news: M1 under-prediction %            mega (權值股)          5.7      5.2  
+B event subsets                    other_news: M1 R2                            mega (權值股)       0.3417   0.3511  
+B event subsets                    other_news: M1e under-prediction %           mega (權值股)          7.1      6.6  
+B event subsets                    other_news: M1e R2                           mega (權值股)       0.3357   0.3454  
+B event subsets                    other_news: dR2 M1e-M1                       mega (權值股)       -0.006  -0.0057  CI BC6 [-0.009, -0.003] / repro [-0.009, -0.002] (supplement)
+B event subsets                    no_news: n                                   mega (權值股)         2728     2745  
+B event subsets                    no_news: M1 under-prediction %               mega (權值股)            4      3.0  
+B event subsets                    no_news: M1 R2                               mega (權值股)       0.2962   0.3032  
+B event subsets                    no_news: M1e under-prediction %              mega (權值股)          4.4      3.4  
+B event subsets                    no_news: M1e R2                              mega (權值股)       0.2945   0.3018  
+B event subsets                    no_news: dR2 M1e-M1                          mega (權值股)      -0.0017  -0.0014  CI BC6 [-0.003, -0.000] / repro [-0.003, 0.000] (supplement)
+B event subsets                    all: dR2 M1e-M1                              mega (權值股)      -0.0011  -0.0011  CI BC6 [-0.004, 0.002] / repro [-0.004, 0.002]
+C big-move AUC (fixed split)       M0                                           mega (權值股)        0.647   0.6801  
+C big-move AUC (fixed split)       M1                                           mega (權值股)       0.6545    0.667  
+C big-move AUC (fixed split)       M2                                           mega (權值股)       0.6551    0.667  
+C big-move AUC (fixed split)       test big-move rate                           mega (權值股)       0.2718   0.2727  
+C abnormal volume R2 (fixed split) M0                                           mega (權值股)       0.2125   0.2126  
+C abnormal volume R2 (fixed split) M1                                           mega (權值股)       0.2794   0.2782  
+C abnormal volume R2 (fixed split) M2                                           mega (權值股)       0.2681     0.27  
+C true-range R2, fixed split, trai M0                                           mega (權值股)       0.4879   0.5275  alpha BC6 100 / repro 100
+C true-range R2, fixed split, trai M1                                           mega (權值股)       0.5019   0.5215  alpha BC6 10 / repro 10
+C true-range R2, fixed split, trai M2                                           mega (權值股)       0.5052   0.5208  alpha BC6 10 / repro 10
+C true-range R2, fixed split, trai M3                                           mega (權值股)       0.4944   0.5171  alpha BC6 100 / repro 10
+C direction                        accuracy                                     mega (權值股)       0.5214   0.5106  
+C direction                        test share of down days                      mega (權值股)       0.5214   0.5217  
+C leakage control (same-day news)  dR2 LEAK-M2, fixed split, step 4 as is       mega (權值股)      -0.0034  -0.0055  alpha chosen separately: M2 10, LEAK 1
+C leakage control (same-day news)  dR2 LEAK-M2, fixed split, same alpha         mega (權值股)      -0.0034   0.0052  CI BC6 [-0.008, 0.001] / repro [0.001, 0.009], alpha 10
+n                                  rows (fixed split)                           mid (中覆蓋組)        18340    18378  
+n                                  test rows                                    mid (中覆蓋組)         9125     9162  
+n                                  test days                                    mid (中覆蓋組)          235      236  
+A walk-forward R2                  M0                                           mid (中覆蓋組)       0.2626   0.2651  CI BC6 [0.225, 0.296] / repro [0.227, 0.302]
+A walk-forward R2                  M1                                           mid (中覆蓋組)       0.2786   0.2865  CI BC6 [0.242, 0.314] / repro [0.248, 0.319]
+A walk-forward R2                  M2                                           mid (中覆蓋組)       0.2792   0.2866  CI BC6 [0.241, 0.314] / repro [0.250, 0.325]
+A walk-forward R2                  M3                                           mid (中覆蓋組)       0.2813   0.2884  CI BC6 [0.244, 0.317] / repro [0.254, 0.323]
+A walk-forward dR2                 M1-M0                                        mid (中覆蓋組)        0.016   0.0214  CI BC6 [-0.003, 0.039] / repro [-0.000, 0.043]
+A walk-forward dR2                 M2-M1                                        mid (中覆蓋組)       0.0006   0.0001  CI BC6 [-0.005, 0.007] / repro [-0.004, 0.004]
+A walk-forward dR2                 M3-M2                                        mid (中覆蓋組)       0.0021   0.0018  CI BC6 [-0.000, 0.005] / repro [-0.001, 0.004]
+A walk-forward dR2                 M3-M1                                        mid (中覆蓋組)       0.0027   0.0019  CI BC6 [-0.004, 0.009] / repro: point only
+B event subsets                    earnings_or_revenue_news: n                  mid (中覆蓋組)          512      513  
+B event subsets                    earnings_or_revenue_news: M1 under-predictio mid (中覆蓋組)         13.7     11.1  
+B event subsets                    earnings_or_revenue_news: M1 R2              mid (中覆蓋組)       0.1066   0.1287  
+B event subsets                    earnings_or_revenue_news: M1e under-predicti mid (中覆蓋組)          1.5     -0.7  
+B event subsets                    earnings_or_revenue_news: M1e R2             mid (中覆蓋組)       0.2093   0.2071  
+B event subsets                    earnings_or_revenue_news: dR2 M1e-M1         mid (中覆蓋組)       0.1027   0.0784  CI BC6 [0.050, 0.157] / repro [0.021, 0.130] (supplement)
+B event subsets                    other_news: n                                mid (中覆蓋組)         2537     2546  
+B event subsets                    other_news: M1 under-prediction %            mid (中覆蓋組)          6.3      4.5  
+B event subsets                    other_news: M1 R2                            mid (中覆蓋組)       0.3118   0.3245  
+B event subsets                    other_news: M1e under-prediction %           mid (中覆蓋組)          7.3      5.4  
+B event subsets                    other_news: M1e R2                           mid (中覆蓋組)       0.3062   0.3206  
+B event subsets                    other_news: dR2 M1e-M1                       mid (中覆蓋組)      -0.0056  -0.0039  CI BC6 [-0.008, -0.003] / repro [-0.006, -0.002] (supplement)
+B event subsets                    no_news: n                                   mid (中覆蓋組)         6076     6103  
+B event subsets                    no_news: M1 under-prediction %               mid (中覆蓋組)          2.7      0.2  
+B event subsets                    no_news: M1 R2                               mid (中覆蓋組)       0.2784   0.2833  
+B event subsets                    no_news: M1e under-prediction %              mid (中覆蓋組)          3.5      0.9  
+B event subsets                    no_news: M1e R2                              mid (中覆蓋組)       0.2761   0.2826  
+B event subsets                    no_news: dR2 M1e-M1                          mid (中覆蓋組)      -0.0023  -0.0007  CI BC6 [-0.004, -0.001] / repro [-0.002, 0.001] (supplement)
+B event subsets                    all: dR2 M1e-M1                              mid (中覆蓋組)       0.0022   0.0026  CI BC6 [-0.001, 0.005] / repro [-0.000, 0.006]
+C big-move AUC (fixed split)       M0                                           mid (中覆蓋組)       0.6579   0.6936  
+C big-move AUC (fixed split)       M1                                           mid (中覆蓋組)       0.6603   0.7015  
+C big-move AUC (fixed split)       M2                                           mid (中覆蓋組)       0.6583   0.7012  
+C big-move AUC (fixed split)       test big-move rate                           mid (中覆蓋組)       0.2764   0.2775  
+C abnormal volume R2 (fixed split) M0                                           mid (中覆蓋組)       0.2793   0.2785  
+C abnormal volume R2 (fixed split) M1                                           mid (中覆蓋組)       0.4017    0.396  
+C abnormal volume R2 (fixed split) M2                                           mid (中覆蓋組)       0.4015      0.4  
+C true-range R2, fixed split, trai M0                                           mid (中覆蓋組)       0.5262     0.56  alpha BC6 0.1 / repro 100
+C true-range R2, fixed split, trai M1                                           mid (中覆蓋組)       0.5301   0.5687  alpha BC6 0.1 / repro 100
+C true-range R2, fixed split, trai M2                                           mid (中覆蓋組)       0.5316   0.5698  alpha BC6 0.1 / repro 100
+C true-range R2, fixed split, trai M3                                           mid (中覆蓋組)       0.5344   0.5713  alpha BC6 0.1 / repro 100
+C direction                        accuracy                                     mid (中覆蓋組)       0.5506   0.5499  
+C direction                        test share of down days                      mid (中覆蓋組)        0.555   0.5543  
+C leakage control (same-day news)  dR2 LEAK-M2, fixed split, step 4 as is       mid (中覆蓋組)       0.0116  -0.0062  alpha chosen separately: M2 100, LEAK 10
+C leakage control (same-day news)  dR2 LEAK-M2, fixed split, same alpha         mid (中覆蓋組)       0.0116     0.01  CI BC6 [0.008, 0.015] / repro [0.007, 0.013], alpha 100
+C cross-market                     US -> TAIEX gap: direction accuracy          taiex_finmind    0.8257   0.8091  n BC6 241 / repro 241
+C cross-market                     US -> TAIEX gap: R2                          taiex_finmind    0.2618   0.2378  
+C cross-market                     US -> TAIEX oc: direction accuracy           taiex_finmind    0.5104   0.5311  n BC6 241 / repro 241
+C cross-market                     US -> TAIEX oc: R2                           taiex_finmind    0.0238   0.0301  
+C cross-market                     US -> TAIEX gap: direction accuracy          taiex_yahoo      0.8257   0.8091  n BC6 241 / repro 241
+C cross-market                     US -> TAIEX gap: R2                          taiex_yahoo      0.2618   0.2378  
+C cross-market                     US -> TAIEX oc: direction accuracy           taiex_yahoo      0.5104   0.5311  n BC6 241 / repro 241
+C cross-market                     US -> TAIEX oc: R2                           taiex_yahoo      0.0238   0.0301  
+C cross-market                     TSM ADR -> 2330 gap: direction accuracy      2330             0.6783    0.694  n BC6 230 / repro 232
+C cross-market                     TSM ADR -> 2330 gap: R2                      2330             0.4649   0.4884  
+C cross-market                     TSM ADR -> 2330 oc: direction accuracy       2330             0.4826   0.4828  n BC6 230 / repro 232
+C cross-market                     TSM ADR -> 2330 oc: R2                       2330             -0.006   0.0065  

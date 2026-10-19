@@ -1,0 +1,6 @@
+bucket
+late              520
+overnight       74310
+prev_session    24612
+session         24612
+dtype: int64

@@ -1,0 +1,24 @@
+{
+  "lines": 49958,
+  "unique_newsId": 49958,
+  "dup": 0,
+  "days": 731,
+  "buckets": {
+    "over": 37896,
+    "sess": 11897,
+    "late": 165,
+    "out": 0
+  },
+  "share_over_pct": 75.9,
+  "share_sess_pct": 23.8,
+  "share_late_pct": 0.3,
+  "tagged": 18408,
+  "tagged_share_pct": 36.8,
+  "tags_per_tagged_item": 3.69,
+  "taggedU1": 5335,
+  "taggedU1over": 4022,
+  "taggedU2": 4923,
+  "taggedU2over": 3637,
+  "mean_items_per_trading_day": 95.2,
+  "mean_items_per_non_trading_day": 15.3
+}

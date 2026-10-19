@@ -1,0 +1,4 @@
+bc1_power_effective_n.json: 64 numbers, identical 64, |diff|<=0.005 64, only on one side 0
+bc2_synthetic_leakage.json: 27 numbers, identical 27, |diff|<=0.005 27, only on one side 0
+bc3_stocknet_real.json: 624 numbers, identical 424, |diff|<=0.005 616, only on one side 0
+bc5_stocknet_volatility.json: 125 numbers, identical 125, |diff|<=0.005 125, only on one side 0

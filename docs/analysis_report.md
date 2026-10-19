@@ -645,7 +645,7 @@ R² 的基準是各股自己在測試期的平均，最保守的算法，只計�
 |---|---|
 | 時間 | 第 10 節時程。資料蒐集約 3 小時（電腦掛著跑，含新聞補到 2019 年），人工標註約 6 小時，其餘是寫程式、跑實驗、寫報告 |
 | 設備 | 一台家用電腦（i5-9400、16 GB RAM、GTX 1050 Ti 4 GB）就夠；主要模型都在 CPU 上跑。embedding 可以用 1050 Ti 算：這張卡是 Pascal 架構，PyTorch 2.14 的 CUDA 12.6 版是最後支援的版本，2.15 起不再提供（見參考資料）。要算全文時，用 Kaggle 免費 GPU 比較快 |
-| 合作 | 5 人分工見第 10 節；程式放私人 GitHub repo（新聞原文不進 repo） |
+| 合作 | 5 人分工見第 10 節；程式放公開的 GitHub repo（新聞原文和股價資料不進 repo） |
 | 預算 | 0 元：鉅亨網、FinMind、交易所、Yahoo 都免費；FinMind 免費註冊可提高請求上限 |
 | 需要的訓練 | 時間序列的切分與驗證、ridge／lasso、embedding 模型的使用、bootstrap。前兩項上課會教，後兩項附錄 B 有範例程式；embedding 要先有 Hugging Face 帳號並同意 Gemma 授權（免費） |
 | 法規 | 著作權法第 9 條只排除「單純傳達事實」的新聞，財經新聞多有分析，視為受保護：原文只放在組內，不公開散布；報告只放統計結果和改寫過的例子。網站使用條款：限速爬取（每次請求間隔 1 秒），網站要求停止就停 |
@@ -816,7 +816,7 @@ R² 的基準是各股自己在測試期的平均，最保守的算法，只計�
 ---
 ## 附錄 B：Base case 與入門程式
 
-全部打包在 `Stock-News_base_cases.zip`。程式、實驗設定（`EXPERIMENTS.md`）、組內重現的結果和 `code/baselines.py` 另外整理在 GitHub repo `ucucucucuccu/stock_basecase`。
+全部打包在 `Stock-News_base_cases.zip`。程式、實驗設定（`EXPERIMENTS.md`）、組內重現的結果和 `code/baselines.py` 另外整理在公開的 GitHub repo：https://github.com/ucucucucuccu/stock_basecase
 
 | 檔案 | 內容 |
 |---|---|

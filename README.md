@@ -30,6 +30,7 @@
 | `logs/` | 重現時每一步的終端機輸出 |
 | `docs/analysis_report.md` | 開工前分析報告（第二版，含重現結果） |
 | `docs/reproduction_2026-10-19.md` | 組內重現報告：遇到的問題與處理 |
+| `docs/midterm_proposal_summary_2026-10-20.md` | 期中 proposal 重點整理（10/20 版，給組員的摘要；時程圖在 `docs/img/`） |
 | `run_all.ps1` | Windows 一鍵重跑 |
 | `env/requirements-lock.txt` | 重現時的套件版本（Python 3.14） |
 
